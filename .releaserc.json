@@ -1,0 +1,71 @@
+{
+    "branches": ["master"],
+    "branch": "master",
+    "ci": false,
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        [
+            "@google/semantic-release-replace-plugin",
+            {
+              "replacements": [
+                {
+                  "files": ["package.json"],
+                  "from": "\"version\":\\s*\".*\"",
+                  "to": "\"version\": \"${nextRelease.version}\""
+                },
+                {
+                    "files": ["addon.xml"],
+                    "from": "addon id=\"script.areace\"\\s*\"version\":\\s*\".*\"",
+                    "to": "addon id=\"script.areace\" \"version\": \"${nextRelease.version}\""
+                }
+              ]
+            }
+        ],
+        [
+            "@semantic-release/exec", {
+                "prepareCmd": "./bin/pack.sh ${nextRelease.version}"
+            }
+        ],
+        [
+            "@semantic-release/changelog", {
+                "changelogFile": "CHANGELOG.md"
+            }
+        ],
+        [
+            "@semantic-release/git", {
+                "assets": [ "CHANGELOG.md", "package.json", "addon.xml" ],
+                "message": "Chore: (release) add version ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+            }
+        ],
+        [
+            "@semantic-release/github", {
+                "assets": [
+                    { "path": "build/*.zip", "label": "Packed Addon" }
+                ]
+            }
+        ],
+        [ 
+            "semantic-release-telegram", {
+                "chats": [ 238585617 ],
+                "telegra.ph"  : {
+                    "title"   : "{name} v.{version}",
+                    "message" : "<a href='{telegraph_url}'>Release Notes</a>",
+                    "content" : "{release_notes}"
+                }
+            } 
+        ]
+    ],
+    "preset": "eslint",
+    "releaseRules": [
+        { "tag": "Fix", "release": "patch" },
+        { "tag": "Update", "release": "minor" },
+        { "tag": "New", "release": "minor" },
+        { "tag": "Breaking", "release": "major" },
+        { "tag": "Docs", "release": "patch" },
+        { "tag": "Upgrade", "release": "patch" }
+    ],
+    "parserOpts": {
+        "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+    }
+}
