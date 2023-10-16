@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/pustovitDmytro/areace/compare/v1.0.2...v1.0.3) (2023-10-16)
+
+
+### Fix
+
+* fixes resolution problem ([faf3269](https://github.com/pustovitDmytro/areace/commit/faf32699a03aa2200d673340eefb447aec8d9964))
+
 ## [1.0.2](https://github.com/pustovitDmytro/areace/compare/v1.0.1...v1.0.2) (2023-10-16)
 
 
