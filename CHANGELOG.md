@@ -1,3 +1,15 @@
+## [1.0.1](https://github.com/pustovitDmytro/areace/compare/v1.0.0...v1.0.1) (2023-10-16)
+
+
+### Chore
+
+* fixes build generation ([e1768a8](https://github.com/pustovitDmytro/areace/commit/e1768a88fed4de5a55dcc7ff4f85fdc3878bef08))
+* save folder to build ([f037a15](https://github.com/pustovitDmytro/areace/commit/f037a15dd8c9a6d158a3e7eb425ed1873cb3dd27))
+
+### Docs
+
+* change fanart ([5229556](https://github.com/pustovitDmytro/areace/commit/5229556b70fbc3b9fb35f3ec70af386360e3d92c))
+
 # 1.0.0 (2023-10-15)
 
 
