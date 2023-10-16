@@ -16,8 +16,8 @@
                 },
                 {
                     "files": ["addon.xml"],
-                    "from": "addon id=\"script.areace\"\\s*\"version\":\\s*\".*\"",
-                    "to": "addon id=\"script.areace\" \"version\": \"${nextRelease.version}\""
+                    "from": "addon\\s+id=\"script.areace\"\\s+version=\"[0-9\\.]+\"",
+                    "to": "addon id=\"script.areace\" version=\"${nextRelease.version}\""
                 }
               ]
             }
