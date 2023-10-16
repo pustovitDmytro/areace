@@ -1,5 +1,5 @@
 import xbmc, xbmcgui
-from data_loader import load_data
+from resources.data_loader import load_data
 
 def main_dialog():
     dialog = xbmcgui.Dialog()

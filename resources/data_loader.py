@@ -1,5 +1,5 @@
 import xbmcaddon
-from telegram import fetch
+from resources.telegram import fetch
 
 ADDON = xbmcaddon.Addon()
 
