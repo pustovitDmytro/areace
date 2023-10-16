@@ -2,10 +2,12 @@ defaults: &defaults
   resource_class: small
   docker:
     - image: circleci/node:16.4.2
-cache-defaults: &cache-defaults
+cache-npm: &cache-npm
   keys:
     - -{{ checksum "package-lock.json" }}
-    - -{{ .BuildNum }}
+cache-kodi: &cache-kodi
+  keys:
+    - -kodi_dist_{{ .Revision }}
 
 parameters:
   skip-coveralls:
@@ -48,7 +50,7 @@ aliases:
       - ~/.npm
       - node_modules
   - &cache-build
-    key: -{{ .BuildNum }}
+    key: -kodi_dist_{{ .Revision }}
     paths:
       - build/script.areace
 
@@ -79,7 +81,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          <<: *cache-defaults
+          <<: *cache-kodi
       - run: *install-kodi-checker
       - run: *run-kodi-checker
   test-leaks:
@@ -104,7 +106,9 @@ jobs:
             not: << pipeline.parameters.skip-deploy >>
           steps:
             - restore_cache:
-                <<: *cache-defaults
+                <<: *cache-npm
+            - restore_cache:
+                <<: *cache-kodi
             - run:
                 name: Create Release
                 command: if [ -z ${CIRCLE_SKIP_DEPLOY+x} ]; then npm run semantic-release;else echo 'job skipped';fi
@@ -124,6 +128,7 @@ workflows:
       - deploy:
           requires:
             - install
+            - test-kodi-checker
           context: npm-packages
           filters:
             branches:
