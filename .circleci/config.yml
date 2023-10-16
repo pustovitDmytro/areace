@@ -5,6 +5,7 @@ defaults: &defaults
 cache-defaults: &cache-defaults
   keys:
     - -{{ checksum "package-lock.json" }}
+    - -{{ .BuildNum }}
 
 parameters:
   skip-coveralls:
@@ -29,27 +30,15 @@ aliases:
   - &danger-pr
     name: Run danger
     command: npx danger ci -d .dangerfile.js
-  - &coveralls
-    name: Upload to coveralls
-    command: npm run coveralls
-  - &coverage
-    name: Test Coverage
-    command: npm run test:coverage -- --reporter mocha-junit-reporter --reporter-options mochaFile=reports/test-results/mocha/test-results.xml
-  - &lint-js
-    name: JavaScript Linter
-    command: npm run lint:js -- --format junit --output-file ./reports/test-results/eslint/eslint.xml
-  - &build-firefox
-    name: Build Firefox
-    command: npm run build:firefox
-  - &debt
-    name: Technical Debt
-    command: npm run test:debt
-  - &security
-    name: Validate dependencies
-    command: npm run test:security
-  - &security-all
-    name: Validate dev-dependencies
-    command: npm audit
+  - &install-kodi-checker
+    name: Install kodi-addon-checker
+    command: pip install kodi-addon-checker
+  - &run-kodi-checker
+    name: Run kodi-addon-checker
+    command: kodi-addon-checker build/script.areace --branch nexus
+  - &build
+    name: Build
+    command: npm run build
   - &install
     name: Installing Dependencies
     command: npm ci
@@ -58,6 +47,10 @@ aliases:
     paths:
       - ~/.npm
       - node_modules
+  - &cache-build
+    key: -{{ .BuildNum }}
+    paths:
+      - build/script.areace
 
 version: 2.1
 debug: true
@@ -75,49 +68,20 @@ jobs:
     steps:
       - checkout
       - run: *install
+      - run: *build
       - run: *danger-pr
       - save_cache: *cache-modules
-  test-security:
-    <<: *defaults
-    steps:
-      - checkout
-      - when:
-          condition:
-            not: << pipeline.parameters.skip-security >>
-          steps:
-            - restore_cache:
-                <<: *cache-defaults
-            - run: *security
-            - run: *security-all
-  test-coverage:
-    <<: *defaults
+      - save_cache: *cache-build
+  test-kodi-checker:
+    resource_class: small
+    docker:
+      - image: cimg/python:3.12.0
     steps:
       - checkout
       - restore_cache:
           <<: *cache-defaults
-      - run: *coverage
-      - store_test_results:
-          path: reports
-      - store_artifacts:
-          path: reports
-      - when:
-          condition:
-            not: << pipeline.parameters.skip-coveralls >>
-          steps:
-            - run: *coveralls
-  test-lint:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache:
-          <<: *cache-defaults
-      - run: *lint-js
-      - run: *build-firefox
-      - run: 
-          name: Lint Firefox build
-          command: npm run lint:firefox
-      - store_test_results:
-          path: reports
+      - run: *install-kodi-checker
+      - run: *run-kodi-checker
   test-leaks:
     resource_class: small
     docker:
@@ -131,15 +95,6 @@ jobs:
             - run:
                 name: Run gitleaks
                 command: "gitleaks -v --path . --config-path .gitleaks.toml"
-  test-debt:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache:
-          <<: *cache-defaults
-      - run: *debt
-      - store_artifacts:
-          path: reports
   deploy:
     <<: *defaults
     steps:
@@ -150,9 +105,6 @@ jobs:
           steps:
             - restore_cache:
                 <<: *cache-defaults
-            - run:
-                name: Install
-                command: npm i
             - run:
                 name: Create Release
                 command: if [ -z ${CIRCLE_SKIP_DEPLOY+x} ]; then npm run semantic-release;else echo 'job skipped';fi
@@ -166,7 +118,12 @@ workflows:
       - test-leaks:
           requires:
             - install
+      - test-kodi-checker:
+          requires:
+            - install
       - deploy:
+          requires:
+            - install
           context: npm-packages
           filters:
             branches:

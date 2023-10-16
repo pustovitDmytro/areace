@@ -1,4 +1,4 @@
 version=$1
-mkdir -p build/areace
-cp -r resources addon.xml LICENSE.txt script.py build/areace
-cd build && zip -rm areace-$version.zip areace
+# mkdir -p build/script.areace
+cp addon.xml build/script.areace
+cd build && zip -rm areace-$version.zip script.areace

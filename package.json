@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "mkdir -p build/script.areace && cp -r resources addon.xml LICENSE.txt script.py build/script.areace",
     "semantic-release": "npx semantic-release"
   },
   "repository": {
