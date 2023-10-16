@@ -1,3 +1,18 @@
+## [1.0.2](https://github.com/pustovitDmytro/areace/compare/v1.0.1...v1.0.2) (2023-10-16)
+
+
+### Chore
+
+* fix updating addon.xml file on release ([dcf1abc](https://github.com/pustovitDmytro/areace/commit/dcf1abceb1fa7b0e30e1c69a86e416613ec102d6))
+* integrate kodi checker into ci process ([837dce6](https://github.com/pustovitDmytro/areace/commit/837dce61077a0c061cde982253abcf0d633f5ec4))
+* refactor Complex entry point ([3600882](https://github.com/pustovitDmytro/areace/commit/3600882c9ddd928cff87da8edcc46e9b30d80f35))
+* refactor Complex entry point ([a64c1c9](https://github.com/pustovitDmytro/areace/commit/a64c1c9bbbe2b5730d4630d8faaf888cf4e1501e))
+
+### Docs
+
+* resize icon ([fb03b00](https://github.com/pustovitDmytro/areace/commit/fb03b00e9f7f34f83e77ab77929addd68f8ef7de))
+* update fanart ([ab1ff32](https://github.com/pustovitDmytro/areace/commit/ab1ff32b8899252a9c4e0534a4e91105748871d6))
+
 ## [1.0.1](https://github.com/pustovitDmytro/areace/compare/v1.0.0...v1.0.1) (2023-10-16)
 
 
