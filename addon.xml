@@ -17,6 +17,10 @@
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshots/settings.jpg</screenshot> 
+			<screenshot>resources/screenshots/telegram_channel.png</screenshot> 
+			<screenshot>resources/screenshots/select_stream.jpg</screenshot> 
+			<screenshot>resources/screenshots/chose_app.jpg</screenshot>
         </assets>
 	</extension>
 </addon>

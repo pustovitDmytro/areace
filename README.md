@@ -14,22 +14,38 @@ We fight for democratic values, freedom, for our future! Once again Ukrainians h
   - [🇺🇦 Help Ukraine](#-help-ukraine)
   - [Table of Contents](#table-of-contents)
   - [About](#about)
+  - [Installation](#installation)
   - [Usage](#usage)
-    - [Telegram](#telegram)
   - [Legal Notice](#legal-notice)
 
 ## About
 Experience the ultimate sports streaming solution with 'Areace.' This addon scours Telegram channels for live sports event links, making it a breeze to watch your favorite games in high quality through the Acestream player.
+![Main Page](resources/screenshots/main_page.jpg)
+
+## Installation
+
+- Use the official Kodi repository or download any version from [GitHub Releases](https://github.com/pustovitDmytro/areace/releases).
+- Note: `Ace Stream` should be installed on your device. The addon simply opens the specified link in the Ace Stream player.
 
 ## Usage
 
-### Telegram
-To use the Telegram provider, follow these steps:
+To use the addon, follow these steps:
 
-  1. Register a [Telegram bot](https://t.me/botfather).
-  2. In the 'Are Ace' settings, enable Telegram and enter your Telegram token.
-  3. Add the bot to the channel where links to broadcasts are posted.
-  4. Receive the links directly in Kodi for seamless access to your favorite sports events.
+1. Register a [Telegram bot](https://t.me/botfather).
+
+2. In the 'Are Ace' settings, enable Telegram and enter your Telegram token.
+   ![settings](resources/screenshots/settings.jpg)
+
+3. Add the bot to the channel where links to broadcasts are posted. If you are not an admin of the channel, I recommend creating your own channel and manually pasting the links there.
+   ![channel](resources/screenshots/telegram_channel.png)
+
+4. Receive the links directly in Kodi for seamless access to your favorite sports events.
+   ![select_stream](resources/screenshots/select_stream.jpg)
+
+5. Choose the *Ace Stream* player to open the link.
+   ![select_stream](resources/screenshots/chose_app.jpg)
+
+6. Wait for Ace Stream to buffer the event. ![buffering](resources/screenshots/acestream_buffering.jpg)
 
 ## Legal Notice
 
