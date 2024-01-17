@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/pustovitDmytro/areace/compare/v1.0.3...v1.0.4) (2024-01-17)
+
+
+### Docs
+
+* adds screenshots ([05d79f7](https://github.com/pustovitDmytro/areace/commit/05d79f716713aa8c42d2956956a636bbd0963a98))
+
 ## [1.0.3](https://github.com/pustovitDmytro/areace/compare/v1.0.2...v1.0.3) (2023-10-16)
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.areace" version="1.0.3" name="Are Ace" provider-name="pustovit">
+<addon id="script.areace" version="1.0.4" name="Are Ace" provider-name="pustovit">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1"/>
 		<import addon="script.module.requests" version="2.27.1"/>
