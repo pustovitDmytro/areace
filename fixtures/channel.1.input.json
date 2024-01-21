@@ -1,0 +1,302 @@
+{
+    "ok": true,
+    "result": [
+        {
+            "channel_post": {
+                "chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                },
+                "date": 1705790443,
+                "entities": [
+                    {
+                        "length": 29,
+                        "offset": 50,
+                        "type": "bold"
+                    },
+                    {
+                        "length": 105,
+                        "offset": 81,
+                        "type": "code"
+                    }
+                ],
+                "forward_date": 1703872134,
+                "forward_from_chat": {
+                    "id": -1001987437911,
+                    "title": "\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0435 \u0442\u0440\u0430\u043d\u0441\u043b\u044f\u0446\u0438\u0438 ACESTREAM",
+                    "type": "channel",
+                    "username": "ACETOP15"
+                },
+                "forward_from_message_id": 701,
+                "forward_origin": {
+                    "chat": {
+                        "id": -1001987437911,
+                        "title": "\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0435 \u0442\u0440\u0430\u043d\u0441\u043b\u044f\u0446\u0438\u0438 ACESTREAM",
+                        "type": "channel",
+                        "username": "ACETOP15"
+                    },
+                    "date": 1703872134,
+                    "message_id": 701,
+                    "type": "channel"
+                },
+                "message_id": 27,
+                "sender_chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                },
+                "text": "\ud83c\udfc6\ud83c\uddf9\ud83c\uddf7 \u0421\u0443\u043f\u0435\u0440\u043a\u0443\u0431\u043e\u043a \u0422\u0443\u0440\u0446\u0438\u0438 2023 | \u0424\u0438\u043d\u0430\u043b\n\n20:45 \ud83c\uddf9\ud83c\uddf7 \u0413\u0430\u043b\u0430\u0442\u0430\u0441\u0430\u0440\u0430\u0439 \u2014 \u0424\u0435\u043d\u0435\u0440\u0431\u0430\u0445\u0447\u0435 \ud83c\uddf9\ud83c\uddf7\n\nacestream://a203f6b935a8ad8659c4c76c1d9c13afa6368ef2\nacestream://b6baa046075d82da300fc1b16de96067a8b9540e"
+            },
+            "update_id": 711841120
+        },
+        {
+            "channel_post": {
+                "chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                },
+                "date": 1705790443,
+                "entities": [
+                    {
+                        "length": 14,
+                        "offset": 0,
+                        "type": "bold"
+                    },
+                    {
+                        "length": 34,
+                        "offset": 79,
+                        "type": "bold"
+                    },
+                    {
+                        "length": 105,
+                        "offset": 115,
+                        "type": "code"
+                    }
+                ],
+                "forward_date": 1704220467,
+                "forward_from_chat": {
+                    "id": -1001987437911,
+                    "title": "\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0435 \u0442\u0440\u0430\u043d\u0441\u043b\u044f\u0446\u0438\u0438 ACESTREAM",
+                    "type": "channel",
+                    "username": "ACETOP15"
+                },
+                "forward_from_message_id": 702,
+                "forward_origin": {
+                    "chat": {
+                        "id": -1001987437911,
+                        "title": "\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0435 \u0442\u0440\u0430\u043d\u0441\u043b\u044f\u0446\u0438\u0438 ACESTREAM",
+                        "type": "channel",
+                        "username": "ACETOP15"
+                    },
+                    "date": 1704220467,
+                    "message_id": 702,
+                    "type": "channel"
+                },
+                "message_id": 28,
+                "sender_chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                },
+                "text": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f \u0410\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0430\u044f \u041f\u0440\u0435\u043c\u044c\u0435\u0440-\u041b\u0438\u0433\u0430 2023/24 | 20-\u0439 \u0442\u0443\u0440\n\n22:30 \ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f \u0412\u0435\u0441\u0442 \u0425\u044d\u043c \u2014 \u0411\u0440\u0430\u0439\u0442\u043e\u043d \ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f\n\nacestream://42fe2ce3ef6b92653a74d85b6e98c2ba0abee707\nacestream://36cad67fed5a739757a9db844a551aa845a8d51b"
+            },
+            "update_id": 711841121
+        },
+        {
+            "channel_post": {
+                "chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                },
+                "date": 1705790478,
+                "entities": [
+                    {
+                        "length": 52,
+                        "offset": 55,
+                        "type": "pre"
+                    },
+                    {
+                        "length": 24,
+                        "offset": 149,
+                        "type": "url"
+                    },
+                    {
+                        "length": 52,
+                        "offset": 190,
+                        "type": "pre"
+                    },
+                    {
+                        "length": 25,
+                        "offset": 284,
+                        "type": "url"
+                    },
+                    {
+                        "length": 52,
+                        "offset": 326,
+                        "type": "pre"
+                    },
+                    {
+                        "length": 13,
+                        "offset": 563,
+                        "type": "mention"
+                    }
+                ],
+                "forward_date": 1698166810,
+                "forward_from_chat": {
+                    "id": -1001809526940,
+                    "title": "\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0435 \u0442\u0440\u0430\u043d\u0441\u043b\u044f\u0446\u0438\u0438 ACESTREAM",
+                    "type": "channel",
+                    "username": "acetop14"
+                },
+                "forward_from_message_id": 4,
+                "forward_origin": {
+                    "chat": {
+                        "id": -1001809526940,
+                        "title": "\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0435 \u0442\u0440\u0430\u043d\u0441\u043b\u044f\u0446\u0438\u0438 ACESTREAM",
+                        "type": "channel",
+                        "username": "acetop14"
+                    },
+                    "date": 1698166810,
+                    "message_id": 4,
+                    "type": "channel"
+                },
+                "link_preview_options": {
+                    "is_disabled": true
+                },
+                "message_id": 29,
+                "reply_markup": {
+                    "inline_keyboard": [
+                        [
+                            {
+                                "text": "\u0421\u043c\u043e\u0442\u0440\u0435\u0442\u044c ACETOP-1",
+                                "url": "https://tinyurl.com/yxs2rgza"
+                            },
+                            {
+                                "text": "\u0421\u043c\u043e\u0442\u0440\u0435\u0442\u044c ACETOP-2",
+                                "url": "https://tinyurl.com/acetop-2"
+                            }
+                        ],
+                        [
+                            {
+                                "text": "\u0421\u043c\u043e\u0442\u0440\u0435\u0442\u044c ACETOP-3",
+                                "url": "https://tinyurl.com/acetop-three"
+                            }
+                        ]
+                    ]
+                },
+                "sender_chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                },
+                "text": "\u0421\u043c\u043e\u0442\u0440\u0438\u043c \u0442\u0440\u0430\u043d\u0441\u043b\u044f\u0446\u0438\u0438 \u0433\u043b\u0430\u0432\u043d\u044b\u0445 \u043c\u0430\u0442\u0447\u0435\u0439 \u0437\u0434\u0435\u0441\u044c\n\u041a\u0430\u043d\u0430\u043b ACETOP-1\nacestream://65d49691687add6a93692a757817bac4f204ed1f HD720p 5000 kbps 50FPS\n\u0414\u043e\u043d\u0430\u0442 \u043d\u0430 ACETOP-1 http://cutt.us/donate-me\n\n\u041a\u0430\u043d\u0430\u043b ACETOP-2\nacestream://78637dab85e7948057165ad0c80b3db475dd9c3d HD720p 5000 kbps 50FPS\n\u0414\u043e\u043d\u0430\u0442 \u043d\u0430 ACETOP-2 http://cutt.us/donate-me2\n\n\u041a\u0430\u043d\u0430\u043b ACETOP-3\nacestream://99da47072cf6d0d9323479791026c48961889557 HD720p 5000 kbps 50FPS\n\u0420S. \u0420\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u043d\u0435 \u043f\u0443\u0431\u043b\u0438\u043a\u0443\u0435\u0442\u0441\u044f, \u043f\u0440\u043e\u0441\u0442\u043e \u0432\u043a\u043b\u044e\u0447\u0430\u0439\u0442\u0435, \u043a\u043e\u0433\u0434\u0430 \u043f\u0440\u043e\u0445\u043e\u0434\u044f\u0442 \u043c\u0430\u0442\u0447\u0438. \u0414\u043b\u044f \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0430 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u0430 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430 acestream. \u041e\u0441\u0442\u0430\u043b\u044c\u043d\u0443\u044e \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044e \u043c\u043e\u0436\u0435\u0442\u0435 \u0441\u043f\u0440\u043e\u0441\u0438\u0442\u044c \u0432 \u0447\u0430\u0442\u0435 @acetop_chat3."
+            },
+            "update_id": 711841122
+        },
+        {
+            "channel_post": {
+                "chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                },
+                "date": 1705790708,
+                "message_id": 30,
+                "sender_chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                },
+                "text": "acestream://e38b33c56332de27ff25df223cdf488b1ec6051f twente psv"
+            },
+            "update_id": 711841123
+        },
+        {
+            "channel_post": {
+                "chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                },
+                "date": 1705791628,
+                "message_id": 31,
+                "sender_chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                },
+                "text": "asfsdfdsf"
+            },
+            "update_id": 711841124
+        },
+        {
+            "channel_post": {
+                "chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                },
+                "date": 1705791636,
+                "forward_date": 1705745221,
+                "forward_from_chat": {
+                    "id": -1001328477048,
+                    "title": "Ukrmemes mine problemes",
+                    "type": "channel",
+                    "username": "UkrMemesmineproblemes"
+                },
+                "forward_from_message_id": 29393,
+                "forward_origin": {
+                    "chat": {
+                        "id": -1001328477048,
+                        "title": "Ukrmemes mine problemes",
+                        "type": "channel",
+                        "username": "UkrMemesmineproblemes"
+                    },
+                    "date": 1705745221,
+                    "message_id": 29393,
+                    "type": "channel"
+                },
+                "message_id": 32,
+                "photo": [
+                    {
+                        "file_id": "AgACAgIAAx0Cc2mggAADIGWsUJQEtHgnGWP0lmQkxrBZJcNkAAI12DEb7XlZSZ7YN6SuRATeAQADAgADcwADNAQ",
+                        "file_size": 1866,
+                        "file_unique_id": "AQADNdgxG-15WUl4",
+                        "height": 90,
+                        "width": 89
+                    },
+                    {
+                        "file_id": "AgACAgIAAx0Cc2mggAADIGWsUJQEtHgnGWP0lmQkxrBZJcNkAAI12DEb7XlZSZ7YN6SuRATeAQADAgADbQADNAQ",
+                        "file_size": 30533,
+                        "file_unique_id": "AQADNdgxG-15WUly",
+                        "height": 320,
+                        "width": 317
+                    },
+                    {
+                        "file_id": "AgACAgIAAx0Cc2mggAADIGWsUJQEtHgnGWP0lmQkxrBZJcNkAAI12DEb7XlZSZ7YN6SuRATeAQADAgADeAADNAQ",
+                        "file_size": 129965,
+                        "file_unique_id": "AQADNdgxG-15WUl9",
+                        "height": 800,
+                        "width": 793
+                    },
+                    {
+                        "file_id": "AgACAgIAAx0Cc2mggAADIGWsUJQEtHgnGWP0lmQkxrBZJcNkAAI12DEb7XlZSZ7YN6SuRATeAQADAgADeQADNAQ",
+                        "file_size": 150079,
+                        "file_unique_id": "AQADNdgxG-15WUl-",
+                        "height": 1051,
+                        "width": 1042
+                    }
+                ],
+                "sender_chat": {
+                    "id": -1001936302208,
+                    "title": "AceStream",
+                    "type": "channel"
+                }
+            },
+            "update_id": 711841125
+        }
+    ]
+}
