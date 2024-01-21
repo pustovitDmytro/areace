@@ -24,8 +24,10 @@ Experience the ultimate sports streaming solution with 'Areace.' This addon scou
 
 ## Installation
 
+- `Ace Stream` should be installed on your device. The add-on simply opens the specified link in the Ace Stream player.
+- The add-on is designed to run only on the `Android` platform.
+- The minimal required version of Kodi is [Kodi 20 'Nexus'](https://kodi.wiki/view/Releases).
 - Use the official Kodi repository or download any version from [GitHub Releases](https://github.com/pustovitDmytro/areace/releases).
-- Note: `Ace Stream` should be installed on your device. The addon simply opens the specified link in the Ace Stream player.
 
 ## Usage
 

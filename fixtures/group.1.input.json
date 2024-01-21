@@ -1,0 +1,217 @@
+{
+    "ok": true,
+    "result": [
+        {
+            "my_chat_member": {
+                "chat": {
+                    "all_members_are_administrators": true,
+                    "id": -4182498011,
+                    "title": "aaaa",
+                    "type": "group"
+                },
+                "date": 1705791864,
+                "from": {
+                    "first_name": "\u0414\u043c\u0438\u0442\u0440\u043e",
+                    "id": 238585617,
+                    "is_bot": false,
+                    "language_code": "en",
+                    "last_name": "\u041f\u0443\u0441\u0442\u043e\u0432\u0456\u0442",
+                    "username": "dimapustovit"
+                },
+                "new_chat_member": {
+                    "status": "member",
+                    "user": {
+                        "first_name": "AceStream",
+                        "id": 6507814710,
+                        "is_bot": true,
+                        "username": "kodi_acestream_bot"
+                    }
+                },
+                "old_chat_member": {
+                    "status": "left",
+                    "user": {
+                        "first_name": "AceStream",
+                        "id": 6507814710,
+                        "is_bot": true,
+                        "username": "kodi_acestream_bot"
+                    }
+                }
+            },
+            "update_id": 711841126
+        },
+        {
+            "message": {
+                "chat": {
+                    "all_members_are_administrators": true,
+                    "id": -4182498011,
+                    "title": "aaaa",
+                    "type": "group"
+                },
+                "date": 1705791864,
+                "from": {
+                    "first_name": "\u0414\u043c\u0438\u0442\u0440\u043e",
+                    "id": 238585617,
+                    "is_bot": false,
+                    "language_code": "en",
+                    "last_name": "\u041f\u0443\u0441\u0442\u043e\u0432\u0456\u0442",
+                    "username": "dimapustovit"
+                },
+                "group_chat_created": true,
+                "message_id": 15
+            },
+            "update_id": 711841127
+        },
+        {
+            "my_chat_member": {
+                "chat": {
+                    "all_members_are_administrators": true,
+                    "id": -4182498011,
+                    "title": "aaaa",
+                    "type": "group"
+                },
+                "date": 1705792155,
+                "from": {
+                    "first_name": "\u0414\u043c\u0438\u0442\u0440\u043e",
+                    "id": 238585617,
+                    "is_bot": false,
+                    "language_code": "en",
+                    "last_name": "\u041f\u0443\u0441\u0442\u043e\u0432\u0456\u0442",
+                    "username": "dimapustovit"
+                },
+                "new_chat_member": {
+                    "can_be_edited": false,
+                    "can_change_info": true,
+                    "can_delete_messages": true,
+                    "can_invite_users": true,
+                    "can_manage_chat": true,
+                    "can_manage_video_chats": true,
+                    "can_manage_voice_chats": true,
+                    "can_pin_messages": true,
+                    "can_promote_members": false,
+                    "can_restrict_members": true,
+                    "is_anonymous": false,
+                    "status": "administrator",
+                    "user": {
+                        "first_name": "AceStream",
+                        "id": 6507814710,
+                        "is_bot": true,
+                        "username": "kodi_acestream_bot"
+                    }
+                },
+                "old_chat_member": {
+                    "status": "member",
+                    "user": {
+                        "first_name": "AceStream",
+                        "id": 6507814710,
+                        "is_bot": true,
+                        "username": "kodi_acestream_bot"
+                    }
+                }
+            },
+            "update_id": 711841128
+        },
+        {
+            "message": {
+                "chat": {
+                    "all_members_are_administrators": true,
+                    "id": -4182498011,
+                    "title": "aaaa",
+                    "type": "group"
+                },
+                "date": 1705792166,
+                "from": {
+                    "first_name": "\u0414\u043c\u0438\u0442\u0440\u043e",
+                    "id": 238585617,
+                    "is_bot": false,
+                    "language_code": "en",
+                    "last_name": "\u041f\u0443\u0441\u0442\u043e\u0432\u0456\u0442",
+                    "username": "dimapustovit"
+                },
+                "message_id": 16,
+                "text": "acestream://e38b33c56332de27ff25df223cdf488b1ec6051f test in group"
+            },
+            "update_id": 711841129
+        },
+        {
+            "message": {
+                "chat": {
+                    "all_members_are_administrators": true,
+                    "id": -4182498011,
+                    "title": "aaaa",
+                    "type": "group"
+                },
+                "date": 1705792175,
+                "entities": [
+                    {
+                        "length": 14,
+                        "offset": 0,
+                        "type": "bold"
+                    },
+                    {
+                        "length": 47,
+                        "offset": 79,
+                        "type": "bold"
+                    },
+                    {
+                        "length": 52,
+                        "offset": 128,
+                        "type": "code"
+                    }
+                ],
+                "forward_date": 1703617527,
+                "forward_from_chat": {
+                    "id": -1001987437911,
+                    "title": "\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0435 \u0442\u0440\u0430\u043d\u0441\u043b\u044f\u0446\u0438\u0438 ACESTREAM",
+                    "type": "channel",
+                    "username": "ACETOP15"
+                },
+                "forward_from_message_id": 695,
+                "forward_origin": {
+                    "chat": {
+                        "id": -1001987437911,
+                        "title": "\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0435 \u0442\u0440\u0430\u043d\u0441\u043b\u044f\u0446\u0438\u0438 ACESTREAM",
+                        "type": "channel",
+                        "username": "ACETOP15"
+                    },
+                    "date": 1703617527,
+                    "message_id": 695,
+                    "type": "channel"
+                },
+                "from": {
+                    "first_name": "\u0414\u043c\u0438\u0442\u0440\u043e",
+                    "id": 238585617,
+                    "is_bot": false,
+                    "language_code": "en",
+                    "last_name": "\u041f\u0443\u0441\u0442\u043e\u0432\u0456\u0442",
+                    "username": "dimapustovit"
+                },
+                "message_id": 17,
+                "text": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f \u0410\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0430\u044f \u041f\u0440\u0435\u043c\u044c\u0435\u0440-\u041b\u0438\u0433\u0430 2023/24 | 19-\u0439 \u0442\u0443\u0440\n\n23:00 \ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f \u041c\u0430\u043d\u0447\u0435\u0441\u0442\u0435\u0440 \u042e\u043d\u0430\u0439\u0442\u0435\u0434 \u2014 \u0410\u0441\u0442\u043e\u043d \u0412\u0438\u043b\u043b\u0430 \ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f\n\nacestream://42fe2ce3ef6b92653a74d85b6e98c2ba0abee707"
+            },
+            "update_id": 711841130
+        },
+        {
+            "message": {
+                "chat": {
+                    "all_members_are_administrators": true,
+                    "id": -4182498011,
+                    "title": "aaaa",
+                    "type": "group"
+                },
+                "date": 1705792199,
+                "from": {
+                    "first_name": "\u0414\u043c\u0438\u0442\u0440\u043e",
+                    "id": 238585617,
+                    "is_bot": false,
+                    "language_code": "en",
+                    "last_name": "\u041f\u0443\u0441\u0442\u043e\u0432\u0456\u0442",
+                    "username": "dimapustovit"
+                },
+                "message_id": 18,
+                "text": "AAAAAAAAAAAA"
+            },
+            "update_id": 711841131
+        }
+
+    ]
+}

@@ -38,12 +38,18 @@ aliases:
   - &run-kodi-checker
     name: Run kodi-addon-checker
     command: kodi-addon-checker build/script.areace --branch nexus
+  - &run-unit
+    name: Run unit tests
+    command: python3 ./test.py
   - &build
     name: Build
     command: npm run build
-  - &install
-    name: Installing Dependencies
+  - &install-npm
+    name: Installing NPM Dependencies
     command: npm ci
+ - &install-pip
+    name: Install pip dependencies
+    command: pip install -r requirements.txt 
   - &cache-modules
     key: -{{ checksum "package-lock.json" }}
     paths:
@@ -61,7 +67,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: *install
+      - run: *install-npm
       - run: *set-github-read-token
       - run: *danger-pr
       
@@ -69,7 +75,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: *install
+      - run: *install-npm
       - run: *build
       - run: *danger-pr
       - save_cache: *cache-modules
@@ -97,6 +103,14 @@ jobs:
             - run:
                 name: Run gitleaks
                 command: "gitleaks -v --path . --config-path .gitleaks.toml"
+  test-unit:
+    resource_class: small
+    docker:
+      - image: cimg/python:3.12.0
+    steps:
+      - checkout
+      - run: *install-pip
+      - run: *run-unit
   deploy:
     <<: *defaults
     steps:
@@ -125,10 +139,14 @@ workflows:
       - test-kodi-checker:
           requires:
             - install
+      - test-unit:
+          requires:
+            - install
       - deploy:
           requires:
             - install
             - test-kodi-checker
+            - test-unit
           context: npm-packages
           filters:
             branches:
