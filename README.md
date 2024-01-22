@@ -16,6 +16,7 @@ We fight for democratic values, freedom, for our future! Once again Ukrainians h
   - [About](#about)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Troubleshooting](#troubleshooting)
   - [Legal Notice](#legal-notice)
 
 ## About
@@ -33,7 +34,7 @@ Experience the ultimate sports streaming solution with 'Areace.' This addon scou
 
 To use the addon, follow these steps:
 
-1. Register a [Telegram bot](https://t.me/botfather).
+1. Register a [Telegram bot](https://t.me/botfather). Obtain bot token (should be in the format `123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11`)
 
 2. In the 'Are Ace' settings, enable Telegram and enter your Telegram token.
    ![settings](resources/screenshots/settings.jpg)
@@ -48,6 +49,13 @@ To use the addon, follow these steps:
    ![select_stream](resources/screenshots/chose_app.jpg)
 
 6. Wait for Ace Stream to buffer the event. ![buffering](resources/screenshots/acestream_buffering.jpg)
+
+## Troubleshooting
+
+I registered and added the bot to a channel; however, my translations list in the addon is empty.
+
+1. Please ensure that the bot is an admin of the channel so that it can access the messages.
+2. To verify, check the link: `https://api.telegram.org/bot<bot_token>/getUpdates`. Incoming messages should be displayed there.
 
 ## Legal Notice
 
