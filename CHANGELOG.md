@@ -1,3 +1,19 @@
+## [1.1.1](https://github.com/pustovitDmytro/areace/compare/v1.1.0...v1.1.1) (2024-01-22)
+
+
+### Chore
+
+* adds empty telegram responses test cases ([055e134](https://github.com/pustovitDmytro/areace/commit/055e1342eaa02ff964804129a14e06551d33c3ef))
+* update readme ([4c37d11](https://github.com/pustovitDmytro/areace/commit/4c37d11cda9def55c259fc9870e5f0cf548c1ba7))
+
+### Docs
+
+* adds Troubleshooting section ([df3d82f](https://github.com/pustovitDmytro/areace/commit/df3d82fdf5edd2f42a304ccb8a6801ffefe5324a))
+
+### Fix
+
+* adds limit to telegram requests ([b3e04f1](https://github.com/pustovitDmytro/areace/commit/b3e04f14a5febdd294f735d577788818a9e599ef))
+
 # [1.1.0](https://github.com/pustovitDmytro/areace/compare/v1.0.4...v1.1.0) (2024-01-21)
 
 
