@@ -56,6 +56,7 @@ I registered and added the bot to a channel; however, my translations list in th
 
 1. Please ensure that the bot is an admin of the channel so that it can access the messages.
 2. To verify, check the link: `https://api.telegram.org/bot<bot_token>/getUpdates`. Incoming messages should be displayed there.
+3. Note that telegram stores updates only for 24h
 
 ## Legal Notice
 
