@@ -15,6 +15,17 @@ class TelegramTests(unittest.TestCase):
     f.close()
     res = handleTelegramResponse(data)
     self.assertEqual(len(res), 2)
-
+  def test_fail(self):
+    f = open('fixtures/fail.json')
+    data = json.load(f)
+    f.close()
+    res = handleTelegramResponse(data)
+    self.assertEqual(len(res), 0)
+  def test_empty(self):
+    f = open('fixtures/empty.json')
+    data = json.load(f)
+    f.close()
+    res = handleTelegramResponse(data)
+    self.assertEqual(len(res), 0)
 if __name__ == "__main__":
   unittest.main()
