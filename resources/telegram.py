@@ -25,7 +25,7 @@ def handleTelegramResponse(json):
     return results
 
 def fetch(config):
-    params = dict(offset=config['offset'])
+    params = dict(offset=-config['offset'], limit=config['offset'], timeout=86400)
     url=host+'bot'+config['token']+'/getUpdates'
     res = requests.get(url, params)
     return handleTelegramResponse(res.json())
